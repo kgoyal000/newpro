@@ -2360,15 +2360,15 @@
 	<!-- / Cookie Notice plugin -->
 	<script>
 		n2ss.ready(2, function(slider, sliderElement) {   
-			sliderElement.on('mainAnimationStart', 
-			function(e, animation, previousSlideIndex, currentSlideIndex) {     
-				init();
+	//		sliderElement.on('mainAnimationStart', 
+	//		function(e, animation, previousSlideIndex, currentSlideIndex) {     
+				//init();
 				//alert('Your slider starts to switch to another slide.');   
-			});    
-	//		sliderElement.on('mainAnimationComplete', 
-	//		function(e, animation, previousSlideIndex, currentSlideIndex) { 
-	//			init(); 
-	//		});
+			//});    
+			sliderElement.on('mainAnimationComplete', 
+			function(e, animation, previousSlideIndex, currentSlideIndex) { 
+				init(); 
+			});
 		});
 	function init() {
 	var vidDefer = document.getElementsByTagName('iframe');
